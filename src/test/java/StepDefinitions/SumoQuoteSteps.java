@@ -44,9 +44,10 @@ public class SumoQuoteSteps {
         elements.clickMethod(elements.getCheckBox());
         elements.clickMethod(elements.getSaveButton());
         BasicDriver.getDriver().switchTo().window(tabs.get(1));
-       // elements.clickMethod(elements.getRefreshBtn());
-        //elements.clickMethod(elements.getVerifyBtn());
-        elements.waitMethod(15);
+        elements.waitMethod(5);
+        elements.clickMethod(elements.getRefreshBtn());
+        elements.clickMethod(elements.getVerifyBtn());
+        elements.waitMethod(5);
         BasicDriver.getDriver().switchTo().window(tabs.get(0));
 
 
@@ -68,8 +69,8 @@ public class SumoQuoteSteps {
     @And("I fill up the title page content")
     public void iFillUpTheTitlePageContent() {
         String filePath = "/Users/nurdane/IdeaProjects/Assignment/src/test/java/StepDefinitions/My-most-popular-pic-since-I-started-dog-photography-5a0b38cbd5e1e__880.jpeg";
-        // elements.sendKeysMethod(elements.getCompanyLogo(),filePath);
-        //elements.waitUntilVisible(elements.getHelpingLine1());
+         elements.sendKeysMethod(elements.getCompanyLogo(),filePath);
+        elements.waitUntilVisible(elements.getHelpingLine1());
         elements.sendKeysMethod(elements.getHelpingLine1(), "Roofing, Siding, Gutters");
         elements.sendKeysMethod(elements.getHelpingLine2(), "Residential & Commercial");
 
