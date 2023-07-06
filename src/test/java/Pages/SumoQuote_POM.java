@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class SumoQuote_Pom extends Methods {
-    public SumoQuote_Pom() {
+public class SumoQuote_POM extends Methods {
+    public SumoQuote_POM() {
         PageFactory.initElements(BasicDriver.getDriver(), this);
     }
 
@@ -49,7 +49,7 @@ public class SumoQuote_Pom extends Methods {
     private WebElement HelpingLine1;
     @FindBy(xpath = "//input[@placeholder=\"ie. Residential & Commercial (appears on cover page)\"]")
     private WebElement HelpingLine2;
-    @FindBy(xpath = "(//span[@class='v-btn__content'])[5]")
+    @FindBy(xpath = "(//span[contains(text(),'See my brand')])[2]")
     private WebElement seeMyBrandBtn;
     @FindBy(xpath = "//input[@id='mail']")
     private WebElement mailAddress;
@@ -59,13 +59,13 @@ public class SumoQuote_Pom extends Methods {
     private WebElement refreshBtn;
     @FindBy(css = "img[src='/images/templates/Template2.png']")
     private WebElement myBrand;
-    @FindBy(xpath = "(//span[@class='v-btn__content'])[6]")
+    @FindBy(xpath = "//span[contains(text(),'Confirm')]")
     private WebElement brandConfirmBtn;
     @FindBy(xpath = "(//div[@class='v-responsive__content'])[5]")
     private WebElement typeOfWork;
-    @FindBy(xpath = "(//span[@class='v-btn__content'])[6]")
+    @FindBy(xpath = "(//span[contains(text(),'Finish')])[2]")
     private WebElement finishBtn;
-    @FindBy(xpath = "(//button[@type='button'])[5]")
+    @FindBy(xpath = "//span[contains(text(),'Let')]")
     private WebElement LetsGoBtn;
 
     public WebElement getVerifyBtn() {

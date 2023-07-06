@@ -9,6 +9,6 @@ import io.cucumber.testng.CucumberOptions;
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 
 )
-public class Positive_Runner extends AbstractTestNGCucumberTests {
+public class RunnerForSumoQuote extends AbstractTestNGCucumberTests {
 
 }
